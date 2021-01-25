@@ -17,10 +17,10 @@ jobs:
       # Create and deploy a Netlify site on push, or a preview on pull-request.
       # https://github.com/netlify/actions/tree/master/build
       # You'll need to add this repo to netlify's github application for this to work: https://github.com/settings/installations
-      - name: Deploy to Netlify
-        id: deploy-netlify
-        uses: netlify/actions/build@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NETLIFY_CMD: yarn install --frozen-lockfile && yarn build
-          NETLIFY_DIR: build
+      #- name: Deploy to Netlify
+      #  id: deploy-netlify
+      #  uses: netlify/actions/build@master
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #    NETLIFY_CMD: yarn install --frozen-lockfile && yarn build
+      #    NETLIFY_DIR: build
