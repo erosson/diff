@@ -10,3 +10,17 @@ form {
   width: 49%;
   display: inline-block;
 }
+.diff ins {
+  color: lightgreen;
+  text-decoration: none;
+}
+.diff del {
+  color: red;
+  text-decoration: none;
+}
+.diff span {
+  color: grey;
+}
+.diff {
+  white-space: pre-wrap;
+}

@@ -57,8 +57,8 @@ routeTo mroute =
                     Nothing ->
                         ( NotFound session, Cmd.none )
 
-                    Just Route.Home ->
-                        Pages.Home.init session |> Tuple.mapBoth Home (Cmd.map HomeMsg)
+                    Just (Route.Home params) ->
+                        Pages.Home.init params session |> Tuple.mapBoth Home (Cmd.map HomeMsg)
 
                     Just Route.Debug ->
                         Pages.Debug.init session |> Tuple.mapBoth Debug (Cmd.map DebugMsg)
