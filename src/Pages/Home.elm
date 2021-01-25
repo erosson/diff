@@ -171,7 +171,6 @@ update msg model =
                         |> JD.decodeValue diffResponseDecoder
                         |> Result.mapError JD.errorToString
                         |> RemoteData.fromResult
-                        |> Debug.log "res"
               }
             , Cmd.none
             )
